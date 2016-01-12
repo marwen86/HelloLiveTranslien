@@ -9,28 +9,23 @@
 
 import UIKit
 
-<<<<<<< HEAD
-class trainsViewController: UIViewController , UITextFieldDelegate {
+class TrainsViewController: UIViewController , UITextFieldDelegate {
 
     @IBOutlet weak var startStation: UITextField?
     @IBOutlet weak var endStation: UITextField?
 
-=======
-class TrainsViewController: UIViewController {
-    
->>>>>>> 9a9126d1130fb8a2b084310ee219bd23134db5be
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         let trainLiveDownloader = LiveTrainDownloader()
 
-        trainLiveDownloader.downloadListTrain(87276030) { (trains) -> () in
-            //list des tarin
-            _ = trains
-        }
-        
-    }
+        trainLiveDownloader.downloadListTrain(87393009 , stationIdArrival: 87393033) { (trains) -> () in
     
+        }
+
+    }
+
     @IBAction func searchAction(sender: UIButton) {
         print("search Action");
     }
@@ -47,6 +42,7 @@ class TrainsViewController: UIViewController {
         }
     }
     
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

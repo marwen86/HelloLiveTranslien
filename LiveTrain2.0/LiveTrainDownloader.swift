@@ -48,7 +48,7 @@ public class LiveTrainDownloader: NSObject {
         parsingClosureCompletion(xmlToParse: xmlToParse)
     }
     
-    public func downloadListTrain(stationId : NSInteger? , trainFetchedCompeltion : (trains : [Train]) ->()) {
+    public func downloadListTrain ( stationIdDeparture : NSInteger? , stationIdArrival : NSInteger? , trainFetchedCompeltion : (trains : [Train]) ->()) {
     
         
         let parsingClosure: (xmlToParse : String?) ->() =  { (xmlToParse) -> () in
@@ -84,12 +84,21 @@ public class LiveTrainDownloader: NSObject {
                 "Authorization": "Basic \(base64Credentials)"
             ]
             
-            Alamofire.request(.GET, "http://api.transilien.com/gare/\(stationId!)/depart/", headers: headers)
+            Alamofire.request(.GET, "http://api.transilien.com/gare/\(stationIdDeparture!)/depart/\(stationIdArrival!)/", headers: headers)
                 .response { response in
                     let stringXml : String = NSString(data: response.2!, encoding: NSUTF8StringEncoding)! as String
                     parsingClosure(xmlToParse: stringXml)
             }
         #endif
+    }
+    
+    private func stringDateConverter (StringDate : String?) ->(NSDate)
+    {
+    
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
+        let date = dateFormatter.dateFromString(StringDate!)
+        return date!
     }
 }
 

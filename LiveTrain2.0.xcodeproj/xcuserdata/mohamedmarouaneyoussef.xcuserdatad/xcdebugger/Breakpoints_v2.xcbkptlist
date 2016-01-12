@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "LiveTrain2.0/trainsViewController.swift"
-            timestampString = "473960066.934074"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "LiveTrain2.0/LiveTrainDownloader.swift"
             timestampString = "474191210.983616"
             startingColumnNumber = "9223372036854775807"
@@ -58,12 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LiveTrain2.0/LiveTrainDownloader.swift"
-            timestampString = "474191718.592606"
+            timestampString = "474290319.251995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "77"
-            endingLineNumber = "77"
-            landmarkName = "downloadListTrain(_:trainFetchedCompeltion:)"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
+            landmarkName = "downloadListTrain(_:stationIdArrival:trainFetchedCompeltion:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -74,12 +58,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "LiveTrain2.0/LiveTrainDownloader.swift"
-            timestampString = "474191719.715903"
+            timestampString = "474290319.251995"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "79"
-            endingLineNumber = "79"
-            landmarkName = "downloadListTrain(_:trainFetchedCompeltion:)"
+            startingLineNumber = "95"
+            endingLineNumber = "95"
+            landmarkName = "stringDateConverter(_:)"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

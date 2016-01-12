@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F50109721C4517D000E06D04 /* TrainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50109711C4517D000E06D04 /* TrainListViewController.swift */; };
+		F50109741C45198400E06D04 /* TrainDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50109731C45198400E06D04 /* TrainDataTableViewCell.swift */; };
 		F54330CD1C3FC0D50068F24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330CC1C3FC0D50068F24A /* AppDelegate.swift */; };
 		F54330CF1C3FC0D50068F24A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330CE1C3FC0D50068F24A /* ViewController.swift */; };
 		F54330D21C3FC0D50068F24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54330D01C3FC0D50068F24A /* Main.storyboard */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F50109711C4517D000E06D04 /* TrainListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainListViewController.swift; sourceTree = "<group>"; };
+		F50109731C45198400E06D04 /* TrainDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainDataTableViewCell.swift; sourceTree = "<group>"; };
 		F54330C91C3FC0D50068F24A /* LiveTrain2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTrain2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54330CC1C3FC0D50068F24A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F54330CE1C3FC0D50068F24A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,8 @@
 				F54330D51C3FC0D50068F24A /* LaunchScreen.storyboard */,
 				F54330D81C3FC0D50068F24A /* Info.plist */,
 				F54330E71C3FEE550068F24A /* LiveTrainDownloader.swift */,
+				F50109711C4517D000E06D04 /* TrainListViewController.swift */,
+				F50109731C45198400E06D04 /* TrainDataTableViewCell.swift */,
 			);
 			path = LiveTrain2.0;
 			sourceTree = "<group>";
@@ -174,6 +180,8 @@
 			files = (
 				F54330CF1C3FC0D50068F24A /* ViewController.swift in Sources */,
 				F54330E81C3FEE550068F24A /* LiveTrainDownloader.swift in Sources */,
+				F50109741C45198400E06D04 /* TrainDataTableViewCell.swift in Sources */,
+				F50109721C4517D000E06D04 /* TrainListViewController.swift in Sources */,
 				F54330E11C3FC2670068F24A /* TrainsViewController.swift in Sources */,
 				F54330CD1C3FC0D50068F24A /* AppDelegate.swift in Sources */,
 			);

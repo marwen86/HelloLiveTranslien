@@ -17,17 +17,17 @@ class TrainsViewController: UIViewController , UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let trainLiveDownloader = LiveTrainDownloader()
-
-        trainLiveDownloader.downloadListTrain(87276030) { (trains) -> () in
-            //list des tarin
-            _ = trains
-        }
-        
     }
+
+    
     
     @IBAction func searchAction(sender: UIButton) {
         print("search Action");
+        let trainLiveDownloader = LiveTrainDownloader()
+        
+        trainLiveDownloader.downloadListTrain(87393009 , stationIdArrival: 87393033) { (trains) -> () in
+    
+        }
     }
     
     // Delegate UITextField
