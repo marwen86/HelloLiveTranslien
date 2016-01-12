@@ -9,8 +9,11 @@
 
 import UIKit
 
-class trainsViewController: UIViewController {
-    
+class trainsViewController: UIViewController , UITextFieldDelegate {
+
+    @IBOutlet weak var startStation: UITextField?
+    @IBOutlet weak var endStation: UITextField?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,10 +26,25 @@ class trainsViewController: UIViewController {
         
     }
     
+    @IBAction func searchAction(sender: UIButton) {
+        print("search Action");
+    }
+    
+    // Delegate UITextField
+    func textFieldDidBeginEditing(textField: UITextField) {    //delegate method
+        
+        if (self.startStation == textField)
+        {
+            print("click text StartStation TextField")
+        }else
+        {
+            print("click text EndStation TextField")
+        }
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
     
 }
