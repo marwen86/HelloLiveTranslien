@@ -58,11 +58,27 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="Wrm-0S-aPW"/>
                                 </connections>
                             </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gwb-8E-Bae">
+                                <rect key="frame" x="0.0" y="255" width="600" height="345"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="345" id="GvK-Bi-dt7"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="dc7-DR-LYK"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="ny3-0A-L4V"/>
+                                </connections>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="gwb-8E-Bae" secondAttribute="trailing" id="8he-I9-kiW"/>
+                            <constraint firstItem="gwb-8E-Bae" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="r5g-it-Kgj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="gwb-8E-Bae" secondAttribute="bottom" id="v5J-id-pkr"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="endStation" destination="9sy-Jb-aQJ" id="0ru-j5-cOm"/>
+                        <outlet property="pickerBizCat" destination="gwb-8E-Bae" id="REY-w0-8Kw"/>
                         <outlet property="startStation" destination="NQA-jb-nhD" id="uMI-PE-nxY"/>
                     </connections>
                 </viewController>

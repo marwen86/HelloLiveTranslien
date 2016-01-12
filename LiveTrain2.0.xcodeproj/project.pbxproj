@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E98059101C4531AD00C57601 /* stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = E980590F1C4531AD00C57601 /* stations.plist */; };
 		F54330CD1C3FC0D50068F24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330CC1C3FC0D50068F24A /* AppDelegate.swift */; };
 		F54330CF1C3FC0D50068F24A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330CE1C3FC0D50068F24A /* ViewController.swift */; };
 		F54330D21C3FC0D50068F24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54330D01C3FC0D50068F24A /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E980590F1C4531AD00C57601 /* stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stations.plist; sourceTree = "<group>"; };
 		F54330C91C3FC0D50068F24A /* LiveTrain2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTrain2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54330CC1C3FC0D50068F24A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F54330CE1C3FC0D50068F24A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				F54330D51C3FC0D50068F24A /* LaunchScreen.storyboard */,
 				F54330D81C3FC0D50068F24A /* Info.plist */,
 				F54330E71C3FEE550068F24A /* LiveTrainDownloader.swift */,
+				E980590F1C4531AD00C57601 /* stations.plist */,
 			);
 			path = LiveTrain2.0;
 			sourceTree = "<group>";
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C0B3A41C4394EE003025FD /* departures.xml in Resources */,
+				E98059101C4531AD00C57601 /* stations.plist in Resources */,
 				F54330D71C3FC0D50068F24A /* LaunchScreen.storyboard in Resources */,
 				F54330D41C3FC0D50068F24A /* Assets.xcassets in Resources */,
 				F54330D21C3FC0D50068F24A /* Main.storyboard in Resources */,
