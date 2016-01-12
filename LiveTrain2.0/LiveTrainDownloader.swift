@@ -58,11 +58,11 @@ public class LiveTrainDownloader: NSObject {
             
             for train in xml["passages"]["train"].all
             {
-                
-                let trainNum = String(train["num"].element?.text)
-                let trainMiss = String(train["miss"].element?.text)
-                let trainTerm = String(train["term"].element?.text)
-                let trainDate = String(train["date"].element?.text)
+               
+                let trainNum = train["num"].element?.text as String!
+                let trainMiss = train["miss"].element?.text as String!
+                let trainTerm = train["term"].element?.text as String!
+                let trainDate = train["date"].element?.text as String!
                 
                 let trainTmp = Train.init(trainNum: trainNum, trainMiss: trainMiss, trainTerm: trainTerm, trainDate: trainDate)
                 
