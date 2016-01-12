@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E98059101C4531AD00C57601 /* stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = E980590F1C4531AD00C57601 /* stations.plist */; };
+		E98059121C45404200C57601 /* stations.plist in Resources */ = {isa = PBXBuildFile; fileRef = E98059111C45404200C57601 /* stations.plist */; };
+		F50109721C4517D000E06D04 /* TrainListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50109711C4517D000E06D04 /* TrainListViewController.swift */; };
+		F50109741C45198400E06D04 /* TrainDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50109731C45198400E06D04 /* TrainDataTableViewCell.swift */; };
 		F54330CD1C3FC0D50068F24A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330CC1C3FC0D50068F24A /* AppDelegate.swift */; };
 		F54330CF1C3FC0D50068F24A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330CE1C3FC0D50068F24A /* ViewController.swift */; };
 		F54330D21C3FC0D50068F24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54330D01C3FC0D50068F24A /* Main.storyboard */; };
@@ -21,7 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E980590F1C4531AD00C57601 /* stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stations.plist; sourceTree = "<group>"; };
+		E98059111C45404200C57601 /* stations.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = stations.plist; sourceTree = "<group>"; };
+		F50109711C4517D000E06D04 /* TrainListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainListViewController.swift; sourceTree = "<group>"; };
+		F50109731C45198400E06D04 /* TrainDataTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainDataTableViewCell.swift; sourceTree = "<group>"; };
 		F54330C91C3FC0D50068F24A /* LiveTrain2.0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LiveTrain2.0.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54330CC1C3FC0D50068F24A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F54330CE1C3FC0D50068F24A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 		F54330CB1C3FC0D50068F24A /* LiveTrain2.0 */ = {
 			isa = PBXGroup;
 			children = (
+				E98059111C45404200C57601 /* stations.plist */,
 				F5C0B3A31C4394EE003025FD /* departures.xml */,
 				F54330CC1C3FC0D50068F24A /* AppDelegate.swift */,
 				F54330CE1C3FC0D50068F24A /* ViewController.swift */,
@@ -79,7 +84,8 @@
 				F54330D51C3FC0D50068F24A /* LaunchScreen.storyboard */,
 				F54330D81C3FC0D50068F24A /* Info.plist */,
 				F54330E71C3FEE550068F24A /* LiveTrainDownloader.swift */,
-				E980590F1C4531AD00C57601 /* stations.plist */,
+				F50109711C4517D000E06D04 /* TrainListViewController.swift */,
+				F50109731C45198400E06D04 /* TrainDataTableViewCell.swift */,
 			);
 			path = LiveTrain2.0;
 			sourceTree = "<group>";
@@ -144,7 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5C0B3A41C4394EE003025FD /* departures.xml in Resources */,
-				E98059101C4531AD00C57601 /* stations.plist in Resources */,
+				E98059121C45404200C57601 /* stations.plist in Resources */,
 				F54330D71C3FC0D50068F24A /* LaunchScreen.storyboard in Resources */,
 				F54330D41C3FC0D50068F24A /* Assets.xcassets in Resources */,
 				F54330D21C3FC0D50068F24A /* Main.storyboard in Resources */,
@@ -178,6 +184,8 @@
 			files = (
 				F54330CF1C3FC0D50068F24A /* ViewController.swift in Sources */,
 				F54330E81C3FEE550068F24A /* LiveTrainDownloader.swift in Sources */,
+				F50109741C45198400E06D04 /* TrainDataTableViewCell.swift in Sources */,
+				F50109721C4517D000E06D04 /* TrainListViewController.swift in Sources */,
 				F54330E11C3FC2670068F24A /* TrainsViewController.swift in Sources */,
 				F54330CD1C3FC0D50068F24A /* AppDelegate.swift in Sources */,
 			);

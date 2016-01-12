@@ -23,9 +23,7 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
         
         pickerBizCat.hidden = true;
         
-        // Do any additional setup after loading the view, typically from a nib.
-        let trainLiveDownloader = LiveTrainDownloader()
-
+        
         if let path = NSBundle.mainBundle().pathForResource("stations", ofType: "plist") {
             stationsDict = NSDictionary(contentsOfFile: path)
         }
@@ -33,12 +31,14 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
             print("dict \(stationsDict.allKeys.count)")
         }
         
-        trainLiveDownloader.downloadListTrain(87276030) { (trains) -> () in
-            //list des tarin
-            _ = trains
-        }
+//        let trainLiveDownloader = LiveTrainDownloader()
+//        trainLiveDownloader.downloadListTrain(87276030) { (trains) -> () in
+//            //list des tarin
+//            _ = trains
+//        }
         
     }
+    
     
     @IBAction func searchAction(sender: UIButton) {
         let idStartStation  = stationsDict[startStation!.text!]
@@ -58,12 +58,13 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
         return 1
     }
-    
+
     // returns the # of rows in each component..
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
         return stationsDict.allKeys.count
-    }
-    
+        }
+
+        
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         return  stationsDict.allKeys[row] as? String
@@ -74,7 +75,7 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
         if(startStationSelected)
         {
             startStation?.text = stationsDict.allKeys[row] as? String
-
+            
         }else{
             endStation?.text = stationsDict.allKeys[row] as? String
         }
@@ -82,17 +83,19 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
         pickerBizCat.hidden = true;
     }
     
+
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        if (self.startStation == textField)
-        {
-            startStationSelected = true
-        }else
-        {
-            startStationSelected = false
-        }
-        pickerBizCat.hidden = false
-        return false
+    if (self.startStation == textField)
+    {
+                    startStationSelected = true
+    }else
+    {
+                startStationSelected = false
     }
+        pickerBizCat.hidden = false
+           return false
+}
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
