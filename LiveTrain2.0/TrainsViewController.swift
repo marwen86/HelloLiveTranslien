@@ -10,14 +10,14 @@
 import UIKit
 
 class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
-
+    
     @IBOutlet weak var startStation: UITextField?
     @IBOutlet weak var endStation:   UITextField?
     @IBOutlet var pickerBizCat: UIPickerView! = UIPickerView()
     
     var stationsDict : NSDictionary!
     var startStationSelected = true
-
+    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -34,11 +34,11 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
             print("dict \(stationsDict.allKeys.count)")
         }
         
-//        let trainLiveDownloader = LiveTrainDownloader()
-//        trainLiveDownloader.downloadListTrain(87276030) { (trains) -> () in
-//            //list des tarin
-//            _ = trains
-//        }
+        //        let trainLiveDownloader = LiveTrainDownloader()
+        //        trainLiveDownloader.downloadListTrain(87276030) { (trains) -> () in
+        //            //list des tarin
+        //            _ = trains
+        //        }
         
     }
     
@@ -46,28 +46,28 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
     @IBAction func searchAction(sender: UIButton) {
         let idStartStation  = stationsDict[startStation!.text!]
         let idEndStation  = stationsDict[endStation!.text!]
-
+        
         if let start = idStartStation
         {
-             if let arrive = idEndStation
-             {
+            if let arrive = idEndStation
+            {
                 print("search Action \(start) \(arrive)");
             }
         }
     }
     
-
+    
     // returns the number of 'columns' to display.
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
         return 1
     }
-
+    
     // returns the # of rows in each component..
     func pickerView(pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int{
         return stationsDict.allKeys.count
-        }
-
-        
+    }
+    
+    
     func pickerView(pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         
         return  stationsDict.allKeys[row] as? String
@@ -86,19 +86,19 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
         pickerBizCat.hidden = true;
     }
     
-
+    
     func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-    if (self.startStation == textField)
-    {
-                    startStationSelected = true
-    }else
-    {
-                startStationSelected = false
-    }
+        if (self.startStation == textField)
+        {
+            startStationSelected = true
+        }else
+        {
+            startStationSelected = false
+        }
         pickerBizCat.hidden = false
-           return false
-}
-
+        return false
+    }
+    
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
