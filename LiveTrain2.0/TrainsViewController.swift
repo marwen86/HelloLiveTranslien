@@ -19,7 +19,10 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
     var startStationSelected = true
 
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        self.title = "Live Train"
         
         pickerBizCat.hidden = true;
         
