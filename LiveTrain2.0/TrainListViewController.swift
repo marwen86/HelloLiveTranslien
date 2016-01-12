@@ -8,12 +8,21 @@
 
 import UIKit
 
-class TrainListViewController: UIViewController {
+class TrainListViewController: UIViewController{
 
+    let tarinCellIdentifier = "trainCell"
     @IBOutlet weak var TrainsListTableView: UITableView!
+    var trainList  = [Train]() {
+       
+        didSet {
+            self.TrainsListTableView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.configureTableView()
+        
         // Do any additional setup after loading the view.
     }
 
@@ -21,16 +30,28 @@ class TrainListViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.trainList.count
     }
-    */
-
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        return basicCellAtIndexPath(indexPath)
+    }
+    
+    func basicCellAtIndexPath(indexPath:NSIndexPath) -> TrainDataTableViewCell {
+        let cell = self.TrainsListTableView.dequeueReusableCellWithIdentifier(tarinCellIdentifier) as! TrainDataTableViewCell
+        let trainTmp = self.trainList[indexPath.row]
+        cell.trainDateLabel.text = trainTmp.trainDate as String!
+        cell.trainNameLabel.text = trainTmp.trainMiss as String!
+        cell.trainTerminusLabel.text = trainTmp.trainTerm  as String!
+        
+        return cell
+    }
+    
+    func configureTableView() {
+        self.TrainsListTableView.rowHeight = UITableViewAutomaticDimension
+         self.TrainsListTableView.estimatedRowHeight = 160.0
+    }
+    
+    
 }

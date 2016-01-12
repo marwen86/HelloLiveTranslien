@@ -10,9 +10,14 @@ import UIKit
 
 class TrainDataTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var trainName: UILabel!
-    @IBOutlet weak var trainTerminus: UILabel!
-    @IBOutlet weak var trainDate: UILabel!
+    @IBOutlet weak var trainNameLabel: UILabel!
+    @IBOutlet weak var trainTerminusLabel: UILabel!
+    @IBOutlet weak var trainDateLabel: UILabel!
+    
+    var trainName: String!
+    var trainTerminus: String!
+    var trainDate: String!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
