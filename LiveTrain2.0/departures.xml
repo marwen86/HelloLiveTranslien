@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<passages gare="87545244">
+<train><date mode="R">22/09/2015 17:23</date>
+<num>157947</num>
+<miss>ZOPO</miss>
+<term>87682005</term>
+</train>
+<train><date mode="R">22/09/2015 17:24</date>
+<num>147637</num>
+<miss>CITY</miss>
+<term>87393009</term>
+</train>
+<train><date mode="R">22/09/2015 17:27</date>
+<num>147339</num>
+<miss>BALI</miss>
+<term>87545194</term>
+</train>
+<train><date mode="R">22/09/2015 17:29</date>
+<num>147839</num>
+<miss>DUFY</miss>
+<term>87545525</term>
+</train>
+<train><date mode="R">22/09/2015 17:29</date>
+<num>148848</num>
+<miss>SARA</miss>
+<term>87393843</term>
+</train>
+<train><date mode="R">22/09/2015 17:29</date>
+<num>156445</num>
+<miss>ROVO</miss>
+<term>87681007</term>
+</train>
+<train><date mode="R">22/09/2015 17:30</date>
+<num>128360</num>
+<miss>LOVA</miss>
+<term>87276279</term>
+</train>
+<train><date mode="R">22/09/2015 17:32</date>
+<num>147441</num>
+<miss>ELAO</miss>
+<term>87545350</term>
+</train>
+<train><date mode="R">22/09/2015 17:32</date>
+<num>148650</num>
+<miss>VICK</miss>
+<term>87393157</term>
+</train>
+<train><date mode="R">22/09/2015 17:35</date>
+<num>154729</num>
+<miss>BUPE</miss>
+<term>87684415</term>
+</train>
+<train><date mode="R">22/09/2015 17:37</date>
+<num>147639</num>
+<miss>CITY</miss>
+<term>87393009</term>
+</train>
+<train><date mode="R">22/09/2015 17:38</date>
+<num>157949</num>
+<miss>ZOPO</miss>
+<term>87682005</term>
+</train>
+<train><date mode="R">22/09/2015 17:39</date>
+<num>126520</num>
+<miss>VUPE</miss>
+<term>87686006</term>
+<etat>Supprimé</etat>
+</train>
+<train><date mode="R">22/09/2015 17:39</date>
+<num>147341</num>
+<miss>BALI</miss>
+<term>87545194</term>
+</train>
+<train><date mode="R">22/09/2015 17:44</date>
+<num>147841</num>
+<miss>DUFY</miss>
+<term>87545525</term>
+</train>
+<train><date mode="R">22/09/2015 17:44</date>
+<num>156523</num>
+<miss>ROVO</miss>
+<term>87681007</term>
+</train>
+<train><date mode="R">22/09/2015 17:45</date>
+<num>128362</num>
+<miss>LOVA</miss>
+<term>87276279</term>
+</train>
+<train><date mode="R">22/09/2015 17:45</date>
+<num>148652</num>
+<miss>VICK</miss>
+<term>87547026</term>
+</train>
+<train><date mode="R">22/09/2015 17:49</date>
+<num>147443</num>
+<miss>ELAO</miss>
+<term>87545350</term>
+</train>
+<train><date mode="R">22/09/2015 17:53</date>
+<num>147641</num>
+<miss>CITY</miss>
+<term>87393009</term>
+</train>
+<train><date mode="R">22/09/2015 17:53</date>
+<num>154301</num>
+<miss>TUPE</miss>
+<term>87681452</term>
+</train>
+<train><date mode="R">22/09/2015 17:53</date>
+<num>157951</num>
+<miss>ZOPO</miss>
+<term>87682005</term>
+</train>
+<train><date mode="R">22/09/2015 17:55</date>
+<num>126606</num>
+<miss>VUPE</miss>
+<term>87276220</term>
+</train>
+<train><date mode="R">22/09/2015 17:55</date>
+<num>148552</num>
+<miss>NORA</miss>
+<term>87276139</term>
+</train>
+</passages>
