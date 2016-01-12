@@ -92,13 +92,18 @@ public class LiveTrainDownloader: NSObject {
         #endif
     }
     
-    private func stringDateConverter (StringDate : String?) ->(NSDate)
+    private func stringDateConverter (stringDate : String?) -> NSDate?
     {
+        guard let stringDate = stringDate else {
+            return nil
+        }
     
+        
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd hh:mm:ss"
-        let date = dateFormatter.dateFromString(StringDate!)
-        return date!
+        let date = dateFormatter.dateFromString(stringDate)
+    
+        return date
     }
 }
 

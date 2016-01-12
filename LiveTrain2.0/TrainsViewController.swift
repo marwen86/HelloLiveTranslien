@@ -11,12 +11,14 @@ import UIKit
 
 class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
     
-    @IBOutlet weak var startStation: UITextField?
-    @IBOutlet weak var endStation:   UITextField?
+    @IBOutlet weak var startStation: UITextField!
+    @IBOutlet weak var endStation:   UITextField!
     @IBOutlet var pickerBizCat: UIPickerView! = UIPickerView()
     
+    var trainListVC : TrainListViewController!
     var stationsDict : NSDictionary!
     var startStationSelected = true
+    
     
     override func viewDidLoad() {
         
@@ -44,19 +46,68 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
     
     
     @IBAction func searchAction(sender: UIButton) {
-        let idStartStation  = stationsDict[startStation!.text!]
-        let idEndStation  = stationsDict[endStation!.text!]
-        
-        if let start = idStartStation
+        guard let startName = startStation.text,
+            let start  = stationsDict[startName] as? String,
+            let endName = endStation.text,
+            let arrive  = stationsDict[endName] as? String,
+            let startID = Int(start),
+            let endID = Int(arrive) else
         {
-            if let arrive = idEndStation
-            {
-                print("search Action \(start) \(arrive)");
-            }
+            return
+        }
+        
+        
+        
+        
+        
+        
+        let trainLiveDownloader = LiveTrainDownloader()
+        
+        trainLiveDownloader.downloadListTrain(startID, stationIdArrival: endID) { (trains) -> () in
+            
+            self.trainListVC.trainList = trains
+        }
+        
+        print("search Action \(start) \(arrive)");
+        
+        
+    }
+    
+    
+    
+    
+    
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        if (self.startStation == textField)
+        {
+            startStationSelected = true
+        }else
+        {
+            startStationSelected = false
+        }
+        pickerBizCat.hidden = false
+        return false
+    }
+    
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if let _ = segue.destinationViewController as? TrainListViewController {
+            self.trainListVC = segue.destinationViewController as! TrainListViewController
         }
     }
     
     
+    
+}
+
+
+// MARK: - Picker view delegate
+extension TrainsViewController {
     // returns the number of 'columns' to display.
     func numberOfComponentsInPickerView(pickerView: UIPickerView) -> Int{
         return 1
@@ -85,24 +136,4 @@ class TrainsViewController: UIViewController , UITextFieldDelegate, UIPickerView
         
         pickerBizCat.hidden = true;
     }
-    
-    
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
-        if (self.startStation == textField)
-        {
-            startStationSelected = true
-        }else
-        {
-            startStationSelected = false
-        }
-        pickerBizCat.hidden = false
-        return false
-    }
-    
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
 }
