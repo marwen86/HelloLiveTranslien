@@ -9,11 +9,16 @@
 
 import UIKit
 
-class TrainsViewController: UIViewController , UITextFieldDelegate {
+<<<<<<< HEAD
+class trainsViewController: UIViewController , UITextFieldDelegate {
 
     @IBOutlet weak var startStation: UITextField?
     @IBOutlet weak var endStation: UITextField?
 
+=======
+class TrainsViewController: UIViewController {
+    
+>>>>>>> 9a9126d1130fb8a2b084310ee219bd23134db5be
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.

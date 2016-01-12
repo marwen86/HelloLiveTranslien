@@ -12,7 +12,7 @@
 		F54330D21C3FC0D50068F24A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54330D01C3FC0D50068F24A /* Main.storyboard */; };
 		F54330D41C3FC0D50068F24A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54330D31C3FC0D50068F24A /* Assets.xcassets */; };
 		F54330D71C3FC0D50068F24A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54330D51C3FC0D50068F24A /* LaunchScreen.storyboard */; };
-		F54330E11C3FC2670068F24A /* trainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330E01C3FC2670068F24A /* trainsViewController.swift */; };
+		F54330E11C3FC2670068F24A /* TrainsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330E01C3FC2670068F24A /* TrainsViewController.swift */; };
 		F54330E31C3FC48F0068F24A /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54330E21C3FC48F0068F24A /* Alamofire.framework */; };
 		F54330E81C3FEE550068F24A /* LiveTrainDownloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54330E71C3FEE550068F24A /* LiveTrainDownloader.swift */; };
 		F54330EA1C3FF6170068F24A /* SWXMLHash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F54330E91C3FF6170068F24A /* SWXMLHash.framework */; };
@@ -27,7 +27,7 @@
 		F54330D31C3FC0D50068F24A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F54330D61C3FC0D50068F24A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54330D81C3FC0D50068F24A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F54330E01C3FC2670068F24A /* trainsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = trainsViewController.swift; sourceTree = "<group>"; };
+		F54330E01C3FC2670068F24A /* TrainsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrainsViewController.swift; sourceTree = "<group>"; };
 		F54330E21C3FC48F0068F24A /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		F54330E71C3FEE550068F24A /* LiveTrainDownloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveTrainDownloader.swift; sourceTree = "<group>"; };
 		F54330E91C3FF6170068F24A /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = Carthage/Build/iOS/SWXMLHash.framework; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 				F5C0B3A31C4394EE003025FD /* departures.xml */,
 				F54330CC1C3FC0D50068F24A /* AppDelegate.swift */,
 				F54330CE1C3FC0D50068F24A /* ViewController.swift */,
-				F54330E01C3FC2670068F24A /* trainsViewController.swift */,
+				F54330E01C3FC2670068F24A /* TrainsViewController.swift */,
 				F54330D01C3FC0D50068F24A /* Main.storyboard */,
 				F54330D31C3FC0D50068F24A /* Assets.xcassets */,
 				F54330D51C3FC0D50068F24A /* LaunchScreen.storyboard */,
@@ -174,7 +174,7 @@
 			files = (
 				F54330CF1C3FC0D50068F24A /* ViewController.swift in Sources */,
 				F54330E81C3FEE550068F24A /* LiveTrainDownloader.swift in Sources */,
-				F54330E11C3FC2670068F24A /* trainsViewController.swift in Sources */,
+				F54330E11C3FC2670068F24A /* TrainsViewController.swift in Sources */,
 				F54330CD1C3FC0D50068F24A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
